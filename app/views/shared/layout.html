@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <title>{{.Title}} - {{.AppName}}</title>
+
+  <link href="/public/css/dropzone.css" type="text/css" rel="stylesheet" />
+  <script src="/public/js/dropzone.js"></script>
+  <script src="/public/js/custom.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <!-- Render the current template here -->
+    {{ yield }}
+    <hr />
+    <footer>
+      <p>&copy; 2017 - {{.AppOwner}}</p>
+    </footer>
+  </div>
+</body>
+
+</html>
